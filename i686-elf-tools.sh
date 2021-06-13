@@ -118,7 +118,7 @@ function installMXE {
     if [ ! -d "/opt/mxe/usr/bin" ]
     then
         echoColor "    Cloning MXE and compiling mingw32.static GCC"
-        cd /opt
+        cd /var/opt
         sudo -E git clone https://github.com/mxe/mxe.git
         cd mxe
         sudo make gcc
